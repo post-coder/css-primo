@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, serif;
+}
+
+/* tutti i tag <h3> */
+h3 {
+    height: 100px;
+    width: 200px;
+    
+    /* ci sono delle proprietà che sono abbreviate */
+    border: 2px dashed purple;
+    /* questo ci permette di settare più proprietà contemporaneamente */
+    /* ad esempio con la regola di prima abbiamo ottenuto il risultato uguale a queste 3 successive */
+    /* 
+    border-color: purple;
+    border-width: 2px;
+    border-style: dashed; 
+    */
+
+    background-color: green;
+
+    color: white;
+    
+}
+
+
+p {
+    /* spessore del font */
+    font-weight: normal;
+    font-weight: bold;
+    /* se uso la stessa regola più volte con diversi valori, la regola scritta per ultima avrà la priorità */
+
+    font-size: 22px;
+    
+    text-align: justify;
+
+    
+}
+
+
+/* posso bersagliare un elemento tramite il suo id */
+/* l'id può essere assegnato solo ad un elemento */
+#secondo-paragrafo {
+    background-color: black;
+    color: white;
+}
+
+
+#terzo-paragrafo {
+    color: red;
+}
+
+/* classe  */
+/* a differenza degli id, le classi possono essere condivise tra più elementi */
+.sfondo-grigio {
+    background-color: gray;
+}
+
+
+
+/*
+ regola di specificità:
+
+ gli id sovrascrivono tutto
+ le classi sovrascrivono i selettori tag
+ i tag sovrascrivono lo stile user agent
+
+ */
+
+
+
+ #terzo-titolo {
+    background-color: blue;
+
+    /* diversi modi per indicare un colore */
+    background-color: #0000ff;
+    background-color: rgb(0%, 0%, 100%);
+ }

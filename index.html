@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo incontro con il CSS</title>
+
+
+
+    <!-- tre modi per inserire lo stile nel nostro documento -->
+
+    <!-- tramite il tag style nella head -->
+    <style>
+        /*
+         qui dentro inseriamo le regole CSS per: 
+         - bersagliare gli elementi html
+         - indicare la proprietà che vogliamo cambiare
+         - specificare il valore che vogliamo assegnare alla proprietà
+
+        */
+
+        /* 
+
+        selettore {
+            proprietà: valore
+        } 
+
+        */
+
+        /* TUTTI i tag <h2> */
+        h2 {
+            color: blue
+        }
+
+
+        
+    </style>
+
+
+
+    <!-- altro modo: tramite foglio esterno -->
+    <!-- esprimiamo il collegamento con il foglio di stile esterno -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- modo inline: -->
+    <!-- inseriamo l'attributo "style" di un determinato tag html -->
+    <!-- metodo sconsigliato, utilizzare solo per le emergenze -->
+    <h1 style="color: red">
+        Ciao a tutti
+    </h1>
+
+    <h2>
+        Titolo secondario
+    </h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae sequi hic consequatur soluta quia quos voluptatibus iure, natus, voluptas aperiam fugiat eum earum corporis ut nisi omnis, totam veniam?
+    </p>
+
+    <p id="secondo-paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae sequi hic consequatur soluta quia quos voluptatibus iure, natus, voluptas aperiam fugiat eum earum corporis ut nisi omnis, totam veniam?
+    </p>
+
+    <p id="terzo-paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae sequi hic consequatur soluta quia quos voluptatibus iure, natus, voluptas aperiam fugiat eum earum corporis ut nisi omnis, totam veniam?
+    </p>
+
+    <p class="sfondo-grigio">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quae sequi hic consequatur soluta quia quos voluptatibus iure, natus, voluptas aperiam fugiat eum earum corporis ut nisi omnis, totam veniam?
+    </p>
+
+    <hr>
+
+    <h3>
+        Titolo terziario
+    </h3>
+
+    <h3 class="sfondo-grigio">
+        Altro titolo
+    </h3>
+
+    <h3 id="terzo-titolo" class="sfondo-grigio">
+        Titolo terziario
+    </h3>
+
+
+
+</body>
+</html>
